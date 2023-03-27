@@ -9,3 +9,4 @@ rebel.xml
 
 ## front
 **/*.lock
+jeecg-module-activiti/.mvn/

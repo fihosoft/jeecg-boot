@@ -24,6 +24,12 @@
             <artifactId>jeecg-module-demo</artifactId>
             <version>${jeecgboot.version}</version>
         </dependency>
+        <!-- 流程模块 -->
+<!--        <dependency>-->
+<!--            <groupId>org.jeecgframework.boot</groupId>-->
+<!--            <artifactId>jeecg-module-activiti</artifactId>-->
+<!--            <version>${jeecgboot.version}</version>-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>

@@ -13,11 +13,14 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 /**
-* 单体启动类
-* 报错提醒: 未集成mongo报错，可以打开启动类上面的注释 exclude={MongoAutoConfiguration.class}
-*/
+ * 单体启动类
+ * 报错提醒: 未集成mongo报错，可以打开启动类上面的注释 exclude={MongoAutoConfiguration.class}
+ */
 @Slf4j
-@SpringBootApplication
+@SpringBootApplication(exclude = {
+        org.springframework.boot.actuate.autoconfigure.security.servlet.ManagementWebSecurityAutoConfiguration.class,
+        org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration.class
+})
 //@EnableAutoConfiguration(exclude={MongoAutoConfiguration.class})
 public class JeecgSystemApplication extends SpringBootServletInitializer {
 
