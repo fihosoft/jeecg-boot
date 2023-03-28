@@ -120,14 +120,14 @@ public class ShiroConfig {
         filterChainDefinitionMap.put("/swagger**/**", "anon");
         filterChainDefinitionMap.put("/webjars/**", "anon");
         filterChainDefinitionMap.put("/v2/**", "anon");
-        
+
         filterChainDefinitionMap.put("/sys/annountCement/show/**", "anon");
 
         //积木报表排除
         filterChainDefinitionMap.put("/jmreport/**", "anon");
         filterChainDefinitionMap.put("/**/*.js.map", "anon");
         filterChainDefinitionMap.put("/**/*.css.map", "anon");
-        
+
         //大屏模板例子
         filterChainDefinitionMap.put("/test/bigScreen/**", "anon");
         filterChainDefinitionMap.put("/bigscreen/template1/**", "anon");
@@ -145,6 +145,7 @@ public class ShiroConfig {
         //filterChainDefinitionMap.put("/actuator/**", "anon");
         //测试模块排除
         filterChainDefinitionMap.put("/test/seata/**", "anon");
+        filterChainDefinitionMap.put("/telecom/login", "anon"); //天天电信登录接口排除
 
         // 添加自己的过滤器并且取名为jwt
         Map<String, Filter> filterMap = new HashMap<String, Filter>(1);

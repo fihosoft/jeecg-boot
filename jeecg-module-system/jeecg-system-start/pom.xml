@@ -30,6 +30,11 @@
 <!--            <artifactId>jeecg-module-activiti</artifactId>-->
 <!--            <version>${jeecgboot.version}</version>-->
 <!--        </dependency>-->
+        <dependency>
+            <groupId>org.jeecgframework.boot</groupId>
+            <artifactId>jeecg-module-daily-telecom</artifactId>
+            <version>${jeecgboot.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
