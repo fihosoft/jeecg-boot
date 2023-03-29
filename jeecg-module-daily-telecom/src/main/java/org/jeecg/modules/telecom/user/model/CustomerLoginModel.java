@@ -1,4 +1,4 @@
-package org.jeecg.modules.telecom.model;
+package org.jeecg.modules.telecom.user.model;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -14,7 +14,7 @@ import lombok.Data;
 @Data
 public class CustomerLoginModel {
     @ApiModelProperty(value = "账号")
-    private String username;
+    private String account;
     @ApiModelProperty(value = "密码")
     private String password;
     @ApiModelProperty(value = "验证码")

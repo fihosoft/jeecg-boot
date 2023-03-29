@@ -145,7 +145,7 @@ public class ShiroConfig {
         //filterChainDefinitionMap.put("/actuator/**", "anon");
         //测试模块排除
         filterChainDefinitionMap.put("/test/seata/**", "anon");
-        filterChainDefinitionMap.put("/telecom/login", "anon"); //天天电信登录接口排除
+        filterChainDefinitionMap.put("/telecom.user/login", "anon"); //天天电信登录接口排除
 
         // 添加自己的过滤器并且取名为jwt
         Map<String, Filter> filterMap = new HashMap<String, Filter>(1);
